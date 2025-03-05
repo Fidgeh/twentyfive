@@ -1,0 +1,36 @@
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh 100vh 100vh;
+    gap: 2px;
+}
+
+@media screen and (max-width:600px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 18vh 82vh 150vh;
+        gap: 2px;
+    }
+}
+
+
+
+#main_header {
+    border-style: solid;
+    border-color: black;
+}
+
+#front_img {
+    border-style: solid;
+    border-color: black;
+}
+
+#picture_sec {
+    border-style: solid;
+    border-color: black;
+}
+
+
