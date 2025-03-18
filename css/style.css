@@ -4,31 +4,62 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50vh 100vh 100vh;
-    gap: 2px;
 }
 
 @media screen and (max-width:600px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 18vh 82vh 150vh;
-        gap: 2px;
+        grid-template-rows: 12vh 85vh 150vh;
     }
 }
 
 
 
-#main_header {
+#header {
+    background-color: #4c4b51;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.header_item {
+    display: flex;
+    border-style: solid;
+    border-width: 1.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture_sec1 {
+    display: grid;
     border-style: solid;
     border-color: black;
 }
 
-#front_img {
-    border-style: solid;
-    border-color: black;
+#front_picture_top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
-#picture_sec {
+.front_picture1 {
+    height: 150px;
+    width: 100px;
+    border-style: solid;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#front_picture_bottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#picture_sec2 {
     border-style: solid;
     border-color: black;
 }
