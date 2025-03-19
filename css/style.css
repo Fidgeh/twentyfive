@@ -6,17 +6,80 @@
     grid-template-rows: 50vh 100vh 100vh;
 }
 
+/*Css för mobil*/
 @media screen and (max-width:600px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 12vh 85vh 150vh;
+        grid-template-rows: 12vh 85vh 150vh 12vh;
     }
+
+    #picture_sec1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: black;
+    }
+
+    #front_big_pic {
+        border-style: solid;
+        height: 82vh;
+        width: 100%;
+        margin: 5px;
+        background-image: url(/img/viktor.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .front_picture {
+        height: 200px;
+        width: 150px;
+        border-style: solid;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+    .bottom_pic {
+        height: 190px;
+        width: 300px;
+        border-style: solid;
+    }
+    
+    #front_picture_top {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    #front_picture_middle {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    #front_picture_bottom {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    #picture_sec2 {
+        border-style: solid;
+        border-color: black;
+        display: grid;
+    }
+    
+    
 }
 
 
 
-#header {
+header {
     background-color: #4c4b51;
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -30,38 +93,16 @@
     align-items: center;
 }
 
-#picture_sec1 {
-    display: grid;
-    border-style: solid;
+#hellstrom {
+    color: white;
     border-color: black;
 }
 
-#front_picture_top {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
+footer {
+    background-color: #4c4b51;
+    color: white;
 }
 
-.front_picture1 {
-    height: 150px;
-    width: 100px;
-    border-style: solid;
-    align-content: center;
-    justify-content: center;
-    
-}
 
-#front_picture_bottom {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-
-#picture_sec2 {
-    border-style: solid;
-    border-color: black;
-}
 
 
