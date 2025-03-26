@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-header {
+#index_mobile_header {
     background-color: #4c4b51;
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -96,6 +96,13 @@ footer {
         flex-wrap: wrap;
         align-content: space-around;
     }
+
+    #about_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12vh 12vh 70vh 175vh 15vh;
+        
+    }
     
     #picture_sec3 {
         display: none;
@@ -113,7 +120,37 @@ footer {
         display: none;
     }
     
+    .solidline {
+        display: none;
+    }
+
+    #about_header {
+        display: flex;
+        justify-content: center;
+    }
     
+    #about_h1 {
+        font-family: "Gidole", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .about_img {
+        border-style: solid;
+        height: 300px;
+        width: 300px;
+    }
+
+    #about_img_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about_img2 {
+        display: none;
+    }
+
 }
 
 
@@ -166,10 +203,10 @@ footer {
 
     aside {
         grid-area: as;
-        border-style: solid;
         position: fixed;
         height: 90vh;
         width: 158px;
+        background-color: #4c4b51;
     }
 
     .index_aside {
@@ -182,6 +219,8 @@ footer {
     .list_item {
         display: flex;
         justify-content: center;
+        font-size: 130%;
+        margin: 8px;
     }
 
     .aside_ul {
@@ -194,7 +233,12 @@ footer {
 
     #hellstrom {
         cursor: pointer;
-        color: black;
+        color: white;
+        font-family: "Radley", serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
     }
 
     a {
@@ -206,7 +250,51 @@ footer {
         display: none;
     }
 
-    header {
+    #index_mobile_header {
+        display: none;
+    }
+
+    #about_header {
+        grid-area: h1;
+        display: flex;
+    }
+
+    #about_h1 {
+        font-family: "Gidole", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    #about_img_div {
+        grid-area: imgdiv;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about_img {
+        border-style: solid;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    #about_text {
+        grid-area: abtxt;
+    }
+
+    #about_wrapper {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 15vh 70vh 80vh;
+        grid-template-areas: 
+        'as h1'
+        'as imgdiv'
+        'as abtxt'
+        ;
+    }
+
+    #about_img2 {
         display: none;
     }
 
