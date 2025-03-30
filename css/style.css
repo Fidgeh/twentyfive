@@ -11,7 +11,6 @@ body {
 
 .header_item {
     display: flex;
-    border-style: solid;
     border-width: 1.5px;
     justify-content: center;
     align-items: center;
@@ -19,12 +18,12 @@ body {
 
 #hellstrom {
     color: white;
-    border-color: black;
 }
 
 footer {
     background-color: #4c4b51;
     color: white;
+    grid-area: ft;
 }
 
 .laying_pic {
@@ -150,6 +149,59 @@ footer {
     #about_img2 {
         display: none;
     }
+
+    #portfolio_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12vh 1fr;
+    }
+
+    .port_sec {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .portfolio {
+        display: block;
+        aspect-ratio: 1/1;
+        width: 270px;
+        margin: 20px;
+    }
+    .port_text {
+        text-align: center;
+        margin-top: 0px;
+        font-size: 130%;
+    }
+        
+        #p1 {
+            background-color: antiquewhite;
+        }
+        #p2 {
+            background-color: blue;
+        }
+        #p3 {
+            background-color: blueviolet;
+        }
+        #p4 {
+            background-color: aquamarine;
+        }
+        #p5 {
+            background-color: brown;
+        }
+        #p6 {
+            background-color: chartreuse;
+        }
+        #p7 {
+            background-color: cornflowerblue;
+        }
+        #p8 {
+            background-color: darkblue;
+        }
+        #p9 {
+            background-color: darkmagenta;
+        }    
+
 
 }
 
@@ -297,9 +349,58 @@ footer {
 
     #portfolio_wrapper {
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 218px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'as psec'
+        ;
     }
 
+    .port_sec {
+        display: grid;
+        grid-area: psec;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        
+
+    }
+
+    .portfolio {
+        display: block;
+        aspect-ratio: 1/1;
+    }
+
+    .port_text {
+        display: none;
+    }
+        
+        #p1 {
+            background-color: antiquewhite;
+        }
+        #p2 {
+            background-color: blue;
+        }
+        #p3 {
+            background-color: blueviolet;
+        }
+        #p4 {
+            background-color: aquamarine;
+        }
+        #p5 {
+            background-color: brown;
+        }
+        #p6 {
+            background-color: chartreuse;
+        }
+        #p7 {
+            background-color: cornflowerblue;
+        }
+        #p8 {
+            background-color: darkblue;
+        }
+        #p9 {
+            background-color: darkmagenta;
+        }    
 
 }
 
