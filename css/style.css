@@ -16,14 +16,13 @@ body {
     align-items: center;
 }
 
-#hellstrom {
+#hellstrom_head {
     color: white;
 }
 
 footer {
     background-color: #4c4b51;
     color: white;
-    grid-area: ft;
 }
 
 .laying_pic {
@@ -68,7 +67,6 @@ footer {
     }
     
     
-
     #picture_sec2 {
         border-style: solid;
         border-color: black;
@@ -334,6 +332,8 @@ footer {
 
     #about_text {
         grid-area: abtxt;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     #about_wrapper {
