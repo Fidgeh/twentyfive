@@ -18,6 +18,11 @@ body {
 
 #hellstrom_head {
     color: white;
+    border-style: solid;
+    border-color: #79777f;
+    border-width: 0.3px;
+    border-top: none;
+    border-bottom: none;
 }
 
 footer {
@@ -97,10 +102,14 @@ footer {
     #about_wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 12vh 12vh 70vh 175vh 15vh;
+        grid-template-rows: 12vh 12vh 70vh 175vh 60vh 15vh;
         
     }
-    
+
+    #leica_bild {
+        height: 250px;
+    }
+
     #picture_sec3 {
         display: none;
     }
@@ -198,7 +207,12 @@ footer {
         }
         #p9 {
             background-color: darkmagenta;
-        }    
+        }  
+    
+    #in_portfolio_wrapper {
+        display: grid;
+        grid-template-rows: 15vh;
+    }
 
 
 }
@@ -325,8 +339,8 @@ footer {
 
     .about_img {
         border-style: solid;
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        aspect-ratio: 1/1;
     }
 
 
@@ -336,14 +350,24 @@ footer {
         grid-template-columns: 50% 50%;
     }
 
+    .abtxt {
+        padding: 20px;
+    }
+
+    #leica_bild {
+        grid-area: lb;
+        height: 250px;
+    }
+
     #about_wrapper {
         display: grid;
         grid-template-columns: 20% 80%;
-        grid-template-rows: 15vh 70vh 80vh;
+        grid-template-rows: 15vh 70vh 70vh 40vh;
         grid-template-areas: 
         'as h1'
         'as imgdiv'
         'as abtxt'
+        'as lb'
         ;
     }
 
