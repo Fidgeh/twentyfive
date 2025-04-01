@@ -66,9 +66,6 @@ footer {
         height: 82vh;
         width: 100%;
         margin: 5px;
-        background-image: url(/img/viktor.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     
     
@@ -212,6 +209,10 @@ footer {
     #in_portfolio_wrapper {
         display: grid;
         grid-template-rows: 15vh;
+    }
+
+    #in_port_sec {
+        text-align: center;
     }
 
 
@@ -425,6 +426,21 @@ footer {
         #p9 {
             background-color: darkmagenta;
         }    
+
+    #in_portfolio_wrapper {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+        'as portsc'
+        ;
+    }
+
+    #in_port_sec {
+        grid-area: portsc;
+        font-family: "Gidole", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
 }
 
