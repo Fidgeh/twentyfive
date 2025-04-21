@@ -31,14 +31,14 @@ footer {
 }
 
 .laying_pic {
-    height: 190px;
-    width: 300px;
+    height: 210px;
+    aspect-ratio: 1.4142 / 1;
     border-style: solid;
 }
 
 .standing_pic {
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    aspect-ratio: 1 / 1.4142;
     border-style: solid;
     align-content: center;
     justify-content: center;
@@ -60,6 +60,7 @@ footer {
         border-style: solid;
         border-color: black;
     }
+
 
     #front_big_pic {
         border-style: solid;
@@ -399,33 +400,7 @@ footer {
         display: none;
     }
         
-        #p1 {
-            background-color: antiquewhite;
-        }
-        #p2 {
-            background-color: blue;
-        }
-        #p3 {
-            background-color: blueviolet;
-        }
-        #p4 {
-            background-color: aquamarine;
-        }
-        #p5 {
-            background-color: brown;
-        }
-        #p6 {
-            background-color: chartreuse;
-        }
-        #p7 {
-            background-color: cornflowerblue;
-        }
-        #p8 {
-            background-color: darkblue;
-        }
-        #p9 {
-            background-color: darkmagenta;
-        }    
+    
 
     #in_portfolio_wrapper {
         display: grid;
