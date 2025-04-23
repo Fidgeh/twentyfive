@@ -3,11 +3,7 @@ body {
     margin: 0px;
 }
 
-#index_mobile_header {
-    background-color: #4c4b51;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
+
 
 .header_item {
     display: flex;
@@ -25,32 +21,39 @@ body {
     border-bottom: none;
 }
 
-footer {
-    background-color: #4c4b51;
-    color: white;
-}
 
-.laying_pic {
-    height: 210px;
-    aspect-ratio: 1.4142 / 1;
-    border-style: solid;
-}
 
-.standing_pic {
-    height: 250px;
-    aspect-ratio: 1 / 1.4142;
-    border-style: solid;
-    align-content: center;
-    justify-content: center;
-    
-}
+
+
+
 
 /*Css för mobil*/
 @media screen and (max-width:600px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 12vh 85vh 150vh 12vh;
+        grid-template-rows: 12vh 85vh 150vh 20vh;
+    }
+
+    #index_mobile_header {
+        background-color: #4c4b51;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .laying_pic {
+        height: 200px;
+        aspect-ratio: 1.4142 / 1;
+        border-style: solid;
+    }
+
+    .standing_pic {
+        height: 200px;
+        aspect-ratio: 1 / 1.4142;
+        border-style: solid;
+        align-content: center;
+        justify-content: center;
+        
     }
 
     #picture_sec1 {
@@ -62,7 +65,7 @@ footer {
     }
 
 
-    #front_big_pic {
+    .front_pic {
         border-style: solid;
         height: 82vh;
         width: 100%;
@@ -95,6 +98,17 @@ footer {
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-content: space-around;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        background-color: #4c4b51;
+        color: white;
+        display: flex;
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #about_wrapper {
@@ -114,6 +128,11 @@ footer {
 
     #picture_sec4 {
         display: none;
+    }
+
+    #bottom_pic1 {
+        width: 300px;
+        aspect-ratio: 1.4142 / 1;
     }
 
     #bottom_pic2 {
@@ -179,33 +198,7 @@ footer {
         font-size: 130%;
     }
         
-        #p1 {
-            background-color: antiquewhite;
-        }
-        #p2 {
-            background-color: blue;
-        }
-        #p3 {
-            background-color: blueviolet;
-        }
-        #p4 {
-            background-color: aquamarine;
-        }
-        #p5 {
-            background-color: brown;
-        }
-        #p6 {
-            background-color: chartreuse;
-        }
-        #p7 {
-            background-color: cornflowerblue;
-        }
-        #p8 {
-            background-color: darkblue;
-        }
-        #p9 {
-            background-color: darkmagenta;
-        }  
+        
     
     #in_portfolio_wrapper {
         display: grid;
@@ -216,7 +209,7 @@ footer {
         text-align: center;
     }
 
-
+    
 }
 
 
@@ -230,6 +223,21 @@ footer {
         'as sec3'
         'as sec4'
         ;
+    }
+
+    .laying_pic {
+        height: 210px;
+        aspect-ratio: 1.4142 / 1;
+        border-style: solid;
+    }
+
+    .standing_pic {
+        height: 250px;
+        aspect-ratio: 1 / 1.4142;
+        border-style: solid;
+        align-content: center;
+        justify-content: center;
+        
     }
 
     #picture_sec1 {
@@ -395,6 +403,10 @@ footer {
         display: block;
         aspect-ratio: 1/1;
     }
+
+        #port1 {
+            
+        }
 
     .port_text {
         display: none;
