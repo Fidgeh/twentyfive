@@ -182,20 +182,30 @@ body {
 
     .port_sec {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         justify-items: center;
     }
     
     .portfolio {
-        display: block;
+        width: 100%;
         aspect-ratio: 1/1;
-        width: 270px;
-        margin: 20px;
+        margin: 10px;
     }
-    .port_text {
+    
+    .portfolio img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        display: block;
+        margin-left: 16.604px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .portfolio .overlay p {
         text-align: center;
-        margin-top: 0px;
-        font-size: 130%;
     }
         
         
@@ -400,13 +410,42 @@ body {
     }
 
     .portfolio {
-        display: block;
+        position: relative;
+        width: 100%;
         aspect-ratio: 1/1;
+        overflow: hidden;
     }
 
-        #port1 {
-            
-        }
+    .portfolio img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .portfolio .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.6);  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        opacity: 0;               
+        transition: opacity .3s;  
+    }
+
+    .portfolio:hover .overlay {
+        opacity: 1;               
+    }
+
+    .portfolio .overlay p {
+        color: #fff;
+        font-size: 1.2rem;
+        margin: 0 1rem;
+        text-align: center;
+    }
 
     .port_text {
         display: none;
