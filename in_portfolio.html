@@ -8,20 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
+    <script src="/js/javascript.js" defer></script>
 </head>
 <body>
   <div id="in_portfolio_wrapper">
     <header id="index_mobile_header">
-        <div class="header_item">MENU</div>
-        <div class="header_item" id="hellstrom_head">HELLSTRÖM</div>
-        <div class="header_item">SHARE</div>
-      </header>
+      <div class="header_item" id="menuToggle">
+        MENU
+        <nav class="dropdown_menu" id="dropdownMenu">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+
+      <a href="/index.html" class="header_item" id="hellstrom_head">
+        <div>HELLSTRÖM</div>
+      </a>
+      
+      <a href="/portfolio.html" class="header_item">
+        <div>PORTFOLIOS</div>
+      </a>
+    </header>
       
       <aside class="index_aside">
-        <h1 id="hellstrom" onclick="window.open('/index.html', '_self')">Hellström</h1>
+        <a href="/index.html">
+          <h1 id="hellstrom">Hellström</h1>
+        </a>
         <ul class="aside_ul">
           <li class="list_item">
-            <a href="">MENU</a>
+            <a href="/index.html">MENU</a>
           </li>
           <li class="list_item">
             <a href="/about.html">ABOUT</a>
@@ -32,9 +47,24 @@
         </ul>
       </aside>
 
-      <section id="in_port_sec">
-        <h2>PORTFOLIOS</h2>
-      </section>
+
+      <div class="in_port_img">
+        <img src="/img/bild3.jpeg" alt="Big picture" id="mainImage" >
+      </div>
+
+      <div class="image-row">
+        <img src="/img/bild1.jpeg" alt="Bild 1" data-large="/img/large1.jpeg">
+        <img src="/img/bild2.jpeg" alt="Bild 2" data-large="/img/large2.jpeg">
+        <img src="/img/bild3.jpeg" alt="Bild 3" data-large="/img/large3.jpeg">
+        <img src="/img/bild4.jpeg" alt="Bild 4" data-large="/img/large4.jpeg">
+        <img src="/img/bild5.jpeg" alt="Bild 5" data-large="/img/large5.jpeg">
+        <img src="/img/bild1.jpeg" alt="Bild 6" data-large="/img/large6.jpeg">
+        <img src="/img/bild2.jpeg" alt="Bild 7" data-large="/img/large7.jpeg">
+        <img src="/img/bild3.jpeg" alt="Bild 8" data-large="/img/large8.jpeg">
+        <img src="/img/bild4.jpeg" alt="Bild 9" data-large="/img/large9.jpeg">
+        <img src="/img/bild5.jpeg" alt="Bild 10" data-large="/img/large10.jpeg">
+      </div>
+
   </div>
 </body>
 </html>

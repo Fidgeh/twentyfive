@@ -8,19 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
+    <script src="/js/javascript.js" defer></script>
 </head>
 <body>
     <div id="about_wrapper">
         <header id="index_mobile_header">
-            <div class="header_item">MENU</div>
-            <div class="header_item" id="hellstrom_head">HELLSTRÖM</div>
-            <div class="header_item">SHARE</div>
+          <div class="header_item" id="menuToggle">
+            MENU
+            <nav class="dropdown_menu" id="dropdownMenu">
+              <a href="/index.html">Home</a>
+              <a href="/about.html">About</a>
+            </nav>
+          </div>
+
+          <a href="/index.html" class="header_item" id="hellstrom_head">
+            <div>HELLSTRÖM</div>
+          </a>
+          
+          <a href="/portfolio.html" class="header_item">
+            <div>PORTFOLIOS</div>
+          </a>
         </header>
+        
         <aside class="index_aside">
-            <h2 id="hellstrom" onclick="window.open('/index.html', '_self')">Hellström</h2>
+          <a href="/index.html">
+            <h1 id="hellstrom">Hellström</h1>
+          </a>
             <ul class="aside_ul">
               <li class="list_item">
-                <a href="">MENU</a>
+                <a href="/index.html">MENU</a>
               </li>
               <li class="list_item">
                 <a href="/about.html">ABOUT</a>
@@ -29,16 +45,17 @@
                 <a href="/portfolio.html">PORTFOLIOS</a>
               </li>
             </ul>
-          </aside>
+        </aside>
+          
           <header id="about_header">
             <h1 id="about_h1">ABOUT BIM HELLSTRÖM</h1>
           </header>
           <div id="about_img_div">
             <div class="about_img">
-
+              <img src="/img/figge.jpg" alt="first picture of figge">
             </div>
             <div class="about_img" id="about_img2">
-
+              <img src="/img/bild7.jpeg" alt="second picture of figge">
             </div>
           </div>
           <div id="about_text">

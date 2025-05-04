@@ -5,20 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/javascript.js" defer></script>
 </head>
 <body>
   <div id="wrapper">
     <header id="index_mobile_header">
-      <div class="header_item">MENU</div>
-      <div class="header_item" id="hellstrom_head">HELLSTRÖM</div>
-      <div class="header_item">SHARE</div>
+      
+      <div class="header_item" id="menuToggle">
+        MENU
+        <nav class="dropdown_menu" id="dropdownMenu">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+
+      <a href="/index.html" class="header_item" id="hellstrom_head">
+        <div>HELLSTRÖM</div>
+      </a>
+      
+      <a href="/portfolio.html" class="header_item">
+        <div>PORTFOLIOS</div>
+      </a>
     </header>
     
     <aside class="index_aside">
-      <h1 id="hellstrom" onclick="window.open('/index.html', '_self')">Hellström</h1>
+      <a href="/index.html">
+        <h1 id="hellstrom">Hellström</h1>
+      </a>  
       <ul class="aside_ul">
         <li class="list_item">
-          <a href="">MENU</a>
+          <a href="/index.html">MENU</a>
         </li>
         <li class="list_item">
           <a href="/about.html">ABOUT</a>
@@ -35,12 +51,12 @@
 
     <section id="picture_sec2">
       <div id="front_picture_top">  
-        <img src="/img/bild4.jpeg" alt="bild1" class="standing_pic">
-        <img src="/img/bild4.jpeg" alt="bild2" class="standing_pic">
+        <img src="/img/bild5.jpeg" alt="bild1" class="standing_pic">
+        <img src="/img/bild6.jpeg" alt="bild2" class="standing_pic">
       </div>
       <div id="front_picture_middle">
-        <img src="/img/bild4.jpeg" alt="bild3" class="standing_pic">
-        <img src="/img/bild4.jpeg" alt="bild4" class="standing_pic">
+        <img src="/img/bild3.jpeg" alt="bild3" class="standing_pic">
+        <img src="/img/bild2.jpeg" alt="bild4" class="standing_pic">
       </div>
       <div id="front_picture_bottom">
         <img src="/img/bild1.jpeg" alt="bild5" id="bottom_pic1">
@@ -49,16 +65,16 @@
     </section>
 
     <section id="picture_sec3">
-      <img src="/img/bild2.jpeg" alt="bild7" class="laying_pic">
+      <img src="/img/bild1.jpeg" alt="bild7" class="laying_pic">
       <img src="/img/bild2.jpeg" alt="bild8" class="laying_pic">
-      <img src="/img/bild2.jpeg" alt="bild9" class="laying_pic">
+      <img src="/img/bild4.jpeg" alt="bild9" class="laying_pic">
     </section>
     <hr class="solidline">
     <section id="picture_sec4">
-      <img src="/img/bild5.jpeg" alt="bild10" class="standing_pic">
-      <img src="/img/bild5.jpeg" alt="bild11" class="standing_pic">
-      <img src="/img/bild5.jpeg" alt="bild12" class="standing_pic">
-      <img src="/img/bild5.jpeg" alt="bild13" class="standing_pic">
+      <img src="/img/bild6.jpeg" alt="bild10" class="standing_pic">
+      <img src="/img/bild7.jpeg" alt="bild11" class="standing_pic">
+      <img src="/img/bild1.jpeg" alt="bild12" class="standing_pic">
+      <img src="/img/bild3.jpeg" alt="bild13" class="standing_pic">
       <img src="/img/bild5.jpeg" alt="bild14" class="standing_pic">
     </section>
 

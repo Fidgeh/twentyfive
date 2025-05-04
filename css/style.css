@@ -5,12 +5,7 @@ body {
 
 
 
-.header_item {
-    display: flex;
-    border-width: 1.5px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #hellstrom_head {
     color: white;
@@ -29,6 +24,49 @@ body {
 
 /*Css för mobil*/
 @media screen and (max-width:600px) {
+    
+    .header_item {
+        display: flex;
+        border-width: 1.5px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+    }
+
+    
+      
+      .dropdown_menu {
+        display: none;            
+        position: absolute;
+        top: 100%;                
+        left: 0;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        min-width: 150px;
+        z-index: 100;
+      }
+      
+      .dropdown_menu a {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .dropdown_menu a:hover {
+        background: #f0f0f0;
+      }
+    
+      .header_item.open .dropdown_menu {
+        display: block;
+      }
+    
+    
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -39,6 +77,7 @@ body {
         background-color: #4c4b51;
         display: grid;
         grid-template-columns: 30% 40% 30%;
+        width: 100%;
     }
 
     .laying_pic {
@@ -60,22 +99,18 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-style: solid;
-        border-color: black;
+        
     }
 
 
     .front_pic {
-        border-style: solid;
-        height: 82vh;
-        width: 100%;
+        height: 75vh;
+        aspect-ratio: 1 / 1.4142;
         margin: 5px;
     }
     
     
     #picture_sec2 {
-        border-style: solid;
-        border-color: black;
         display: grid;
     }
     
@@ -164,6 +199,12 @@ body {
         width: 300px;
     }
 
+    .about_img img {
+        object-fit: cover;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+
     #about_img_div {
         display: flex;
         justify-content: center;
@@ -212,14 +253,45 @@ body {
     
     #in_portfolio_wrapper {
         display: grid;
-        grid-template-rows: 15vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 70vh 25vh;
     }
 
-    #in_port_sec {
-        text-align: center;
+    .in_port_img {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    
+    .in_port_img img {
+        height: 90%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+    .image-row {
+        display: flex;           
+        flex-wrap: nowrap;       
+        gap: 8px;                
+        overflow-x: auto;        
+        padding: 20px;
+        justify-content: start;           
+      }
+      
+      .image-row img {
+        width: 60px;             
+        height: auto;            
+        object-fit: cover;      
+        border-radius: 4px;      
+        cursor: pointer;         
+        transition: transform .2s;
+      }
+      
+      .image-row img:hover {
+        transform: scale(1.1);   
+      }
 }
 
 
@@ -238,13 +310,11 @@ body {
     .laying_pic {
         height: 210px;
         aspect-ratio: 1.4142 / 1;
-        border-style: solid;
     }
 
     .standing_pic {
         height: 250px;
         aspect-ratio: 1 / 1.4142;
-        border-style: solid;
         align-content: center;
         justify-content: center;
         
@@ -339,6 +409,18 @@ body {
         display: none;
     }
 
+    #about_wrapper {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 15vh 70vh 70vh 40vh;
+        grid-template-areas: 
+        'as h1'
+        'as imgdiv'
+        'as abtxt'
+        'as lb'
+        ;
+    }
+
     #about_header {
         grid-area: h1;
         display: flex;
@@ -358,9 +440,14 @@ body {
     }
 
     .about_img {
-        border-style: solid;
         height: 350px;
         aspect-ratio: 1/1;
+    }
+
+    .about_img img {
+        aspect-ratio: 1/1;
+        height: 100%;
+        object-fit: cover;
     }
 
 
@@ -379,17 +466,7 @@ body {
         height: 250px;
     }
 
-    #about_wrapper {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 15vh 70vh 70vh 40vh;
-        grid-template-areas: 
-        'as h1'
-        'as imgdiv'
-        'as abtxt'
-        'as lb'
-        ;
-    }
+    
 
     #portfolio_wrapper {
         display: grid;
@@ -455,18 +532,51 @@ body {
 
     #in_portfolio_wrapper {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 15% 1fr;
+        grid-template-rows: 80vh 20vh;
         grid-template-areas: 
-        'as portsc'
+        'as inportimg'
+        'as imgrow'
         ;
     }
 
-    #in_port_sec {
-        grid-area: portsc;
-        font-family: "Gidole", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    .in_port_img {
+        grid-area: inportimg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
+    
+    .in_port_img img {
+        aspect-ratio: 1/1;
+        height: 80%;
+        object-fit: cover;
+
+    }
+
+    .image-row {
+        grid-area: imgrow;
+        display: flex;           
+        flex-wrap: nowrap;       
+        gap: 8px;                
+        overflow-x: auto;        
+        padding: 10px;
+        justify-content: center;           
+      }
+      
+      .image-row img {
+        width: 60px;             
+        height: auto;            
+        object-fit: cover;      
+        border-radius: 4px;      
+        cursor: pointer;         
+        transition: transform .2s;
+      }
+      
+      .image-row img:hover {
+        transform: scale(1.1);   
+      }
 
 }
 
