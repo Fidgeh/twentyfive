@@ -264,6 +264,10 @@ body {
         justify-content: center;
     }
 
+    .in_port_img h3 {
+        display: none;
+    }
+
     .in_port_img img {
         height: 90%;
         aspect-ratio: 1/1;
@@ -278,20 +282,24 @@ body {
         overflow-x: auto;        
         padding: 20px;
         justify-content: start;           
-      }
+    }
       
-      .image-row img {
+    .image-row img {
         width: 60px;             
         height: auto;            
         object-fit: cover;      
         border-radius: 4px;      
         cursor: pointer;         
         transition: transform .2s;
-      }
+    }
       
-      .image-row img:hover {
+    .image-row img:hover {
         transform: scale(1.1);   
-      }
+    }
+
+    #portfolio_name {
+        margin-left: 50px;
+    }
 }
 
 
@@ -545,13 +553,22 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        position: relative;
     }
     
     .in_port_img img {
         aspect-ratio: 1/1;
         height: 80%;
         object-fit: cover;
+    }
+
+    .in_port_img h3 {
+        position: absolute;
+        left: 6rem;
+        bottom: 2rem;
+        font-family: "Tagesschrift", system-ui;
+        font-weight: 400;
+        font-style: normal;
 
     }
 
