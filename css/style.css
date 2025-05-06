@@ -137,19 +137,10 @@ body {
         height: auto;
     }
 
-    footer {
-        background-color: #4c4b51;
-        color: white;
-        display: flex;
-        padding: 5px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     #about_wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 12vh 12vh 70vh 175vh 60vh 15vh;
+        grid-template-rows: 12vh 12vh 70vh 165vh 60vh 15vh;
         
     }
 
@@ -193,6 +184,12 @@ body {
         font-style: normal;
     }
 
+    .abtxt {
+        margin: 13px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
     .about_img {
         border-style: solid;
         height: 300px;
@@ -213,6 +210,14 @@ body {
 
     #about_img2 {
         display: none;
+    }
+
+    #footer {
+        padding: 10px;
+        background-color: #4c4b51;
+        color: white;
+        display: flex;
+        justify-content: center;
     }
 
     #portfolio_wrapper {
@@ -247,6 +252,8 @@ body {
     
     .portfolio .overlay p {
         text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
     }
         
         
@@ -254,7 +261,7 @@ body {
     #in_portfolio_wrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 15vh 70vh 25vh;
+        grid-template-rows: 12vh 70vh 25vh;
     }
 
     .in_port_img {
@@ -325,7 +332,6 @@ body {
         aspect-ratio: 1 / 1.4142;
         align-content: center;
         justify-content: center;
-        
     }
 
     #picture_sec1 {
@@ -351,12 +357,26 @@ body {
         align-items: center;
     }
 
+    .img-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0rem;
+    }
+
+    .caption {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+        line-height: 1.2;
+        text-align: left;
+    }
+
     .solidline {
         border-top: 2px solid black;
         width: 75vw;
         height: 0px;
         margin-top: 50vh;
-        margin-left: 22.5vw;
+        margin-left: 21.5vw;
     }
 
     #bottom_pic1 {
@@ -383,6 +403,13 @@ body {
         justify-content: center;
         font-size: 130%;
         margin: 8px;
+        color: white;
+        transition: transform .3s ease;
+    }
+
+    .list_item:hover {
+        color: rgb(103, 103, 103);
+        transform: scale(1.1);
     }
 
     .aside_ul {
@@ -390,18 +417,25 @@ body {
         flex-direction: column;
         padding: 0px;
         justify-content: center;
-        
     }
 
     #hellstrom {
         cursor: pointer;
         color: white;
-        font-family: "Radley", serif;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
         font-weight: 400;
         font-style: normal;
         display: flex;
         justify-content: center;
         font-size: 200%;
+        transition: transform .3s ease;
+    }
+
+    #hellstrom:hover {
+        transform: scale(1.1);
+        color:  rgb(103, 103, 103);
     }
 
     a {
@@ -467,6 +501,7 @@ body {
 
     .abtxt {
         padding: 20px;
+
     }
 
     #leica_bild {

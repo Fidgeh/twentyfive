@@ -6,6 +6,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/javascript.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gidole&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radley:ital@0;1&family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="wrapper">
@@ -33,15 +36,21 @@
         <h1 id="hellstrom">Hellström</h1>
       </a>  
       <ul class="aside_ul">
-        <li class="list_item">
-          <a href="/index.html">MENU</a>
-        </li>
-        <li class="list_item">
-          <a href="/about.html">ABOUT</a>
-        </li>
-        <li class="list_item">
-          <a href="/portfolio.html">PORTFOLIOS</a>
-        </li>
+        <a href="/index.html">
+          <li class="list_item">
+            MENU
+          </li>
+        </a>
+        <a href="/about.html">
+          <li class="list_item">
+            ABOUT
+          </li>
+        </a>
+        <a href="/portfolio.html">
+          <li class="list_item">
+            PORTFOLIOS
+          </li>
+        </a>
       </ul>
     </aside>
 
@@ -65,25 +74,53 @@
     </section>
 
     <section id="picture_sec3">
-      <img src="/img/bild1.jpeg" alt="bild7" class="laying_pic">
-      <img src="/img/bild2.jpeg" alt="bild8" class="laying_pic">
-      <img src="/img/bild4.jpeg" alt="bild9" class="laying_pic">
+      <figure class="img-box">
+        <img src="/img/bild1.jpeg" alt="bild7" class="laying_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+
+      <figure class="img-box">
+        <img src="/img/bild2.jpeg" alt="bild8" class="laying_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+
+      <figure class="img-box">
+        <img src="/img/bild4.jpeg" alt="bild9" class="laying_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
     </section>
     <hr class="solidline">
     <section id="picture_sec4">
-      <img src="/img/bild6.jpeg" alt="bild10" class="standing_pic">
-      <img src="/img/bild7.jpeg" alt="bild11" class="standing_pic">
-      <img src="/img/bild1.jpeg" alt="bild12" class="standing_pic">
-      <img src="/img/bild3.jpeg" alt="bild13" class="standing_pic">
-      <img src="/img/bild5.jpeg" alt="bild14" class="standing_pic">
+      <figure class="img-box">
+        <img src="/img/bild6.jpeg" alt="bild10" class="standing_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+      
+      <figure class="img-box">
+        <img src="/img/bild7.jpeg" alt="bild11" class="standing_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+      
+      <figure class="img-box">
+        <img src="/img/bild1.jpeg" alt="bild12" class="standing_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+      
+      <figure class="img-box">
+        <img src="/img/bild3.jpeg" alt="bild13" class="standing_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
+      
+      <figure class="img-box">
+        <img src="/img/bild5.jpeg" alt="bild14" class="standing_pic">
+        <figcaption class="caption">199 kr</figcaption>
+      </figure>
     </section>
 
 
-    <footer>
-      <p>Instagram:</p> 
-      <p>Figge Hellström </p>
-      <p>Mail:</p>
-      <p>figgehellstrom20@gmail.com</p>
+    <footer id="footer">
+      Hellström copyright <br> <br>
+      Follow Instagram
     </footer>
   </div>
 </body>
