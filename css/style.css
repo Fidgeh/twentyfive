@@ -25,6 +25,13 @@ body {
 /*Css för mobil*/
 @media screen and (max-width:600px) {
     
+    #index_mobile_header {
+        background-color: #4c4b51;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        width: 100%;
+    }
+
     .header_item {
         display: flex;
         border-width: 1.5px;
@@ -35,6 +42,7 @@ body {
         cursor: pointer;
         user-select: none;
         position: relative;
+        font-size: 90%;
     }
 
     
@@ -71,13 +79,6 @@ body {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 12vh 85vh 150vh 20vh;
-    }
-
-    #index_mobile_header {
-        background-color: #4c4b51;
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
-        width: 100%;
     }
 
     .laying_pic {
@@ -229,13 +230,14 @@ body {
     .port_sec {
         display: grid;
         grid-template-columns: 100%;
-        justify-items: center;
     }
     
     .portfolio {
         width: 100%;
         aspect-ratio: 1/1;
-        margin: 10px;
+        margin: 10px 0;
+        position: relative;
+        color: inherit;
     }
     
     .portfolio img {
@@ -243,7 +245,7 @@ body {
         height: 90%;
         object-fit: cover;
         display: block;
-        margin-left: 16.604px;
+        margin: 0 auto;
     }
 
     a {
@@ -255,7 +257,6 @@ body {
         text-decoration: none;
         font-size: 1.1rem;
     }
-        
         
     
     #in_portfolio_wrapper {
@@ -459,7 +460,7 @@ body {
         'as h1'
         'as imgdiv'
         'as abtxt'
-        'as lb'
+        'as pictxt'
         ;
     }
 
@@ -504,9 +505,19 @@ body {
 
     }
 
-    #leica_bild {
-        grid-area: lb;
+    .pic-and-txt {
+        grid-area: pictxt;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pic-and-txt img {
         height: 250px;
+    }
+
+    .pic-and-txt p {
+        width: 45%;
+        margin-left: 150px;
     }
 
     
